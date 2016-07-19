@@ -1,4 +1,4 @@
 <h1>
   <%= @user.name %>
-  <button>Logout</button>
+  <%= link_to "Log out", session_path("current"), method: :delete %>
 </h1>
